@@ -24,6 +24,6 @@ app.use("/api/v1", applicationForm);
 app.use("/api/v1", applicationOrder);
 
 //SERVER
-app.listen(PORT, () => {
-  console.log(`🔥 Server Started at PORT : ${PORT} `);
+app.listen(process.env.PORT, () => {
+  console.log(`🔥 Server Started at PORT : ${process.env.PORT} `);
 });
